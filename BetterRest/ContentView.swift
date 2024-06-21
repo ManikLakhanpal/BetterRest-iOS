@@ -27,32 +27,38 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("When do you want to wake up?")
-                    .font(.headline)
+            Form {
+                Section("When do you want to wake up?") {
+                    HStack {
+                        Text("Choose Time")
+                        Spacer()
+                        DatePicker("Please enter a time",
+                                   selection: $wakeUp,
+                                   displayedComponents: .hourAndMinute
+                        )
+                        .labelsHidden()
+                    }
+                }
                 
-                DatePicker("Please enter a time",
-                           selection: $wakeUp,
-                           displayedComponents: .hourAndMinute
-                )
-                .labelsHidden()
+                Section("Desired amount of sleep") {
+                    VStack(alignment: .leading, spacing: 10) {
                 
-                Text("Desired amount of sleep")
-                    .font(.headline)
-                
-                Stepper("\(sleepAmount.formatted()) hours",
-                        value: $sleepAmount,
-                        in: 4...12,
-                        step: 0.25
-                )
-                
-                Text("Daily coffee intake")
-                    .font(.headline)
-                
-                Stepper("\(coffeeAmount) cup(s)",
-                        value: $coffeeAmount,
-                        in: 0...20
-                )
+                        Stepper("\(sleepAmount.formatted()) hours",
+                                value: $sleepAmount,
+                                in: 4...12,
+                                step: 0.25
+                        )
+                    }
+                }
+                Section("Daily coffee intake"){
+                    VStack(alignment: .leading, spacing: 10) {
+                        
+                        Stepper("\(coffeeAmount) cup(s)",
+                                value: $coffeeAmount,
+                                in: 0...20
+                        )
+                    }
+                }
             }
             .navigationTitle("Better Rest")
             .toolbar {
