@@ -11,6 +11,7 @@
 		78552FEF2C18650400ACCBE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78552FEE2C18650400ACCBE7 /* ContentView.swift */; };
 		78552FF12C18650500ACCBE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78552FF02C18650500ACCBE7 /* Assets.xcassets */; };
 		78552FF42C18650500ACCBE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78552FF32C18650500ACCBE7 /* Preview Assets.xcassets */; };
+		7861D50E2C2589C000E959B8 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7861D50D2C2589C000E959B8 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		78552FEE2C18650400ACCBE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78552FF02C18650500ACCBE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78552FF32C18650500ACCBE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7861D50D2C2589C000E959B8 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = ../../../../../SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				78552FEC2C18650400ACCBE7 /* BetterRestApp.swift */,
 				78552FEE2C18650400ACCBE7 /* ContentView.swift */,
+				7861D50D2C2589C000E959B8 /* SleepCalculator.mlmodel */,
 				78552FF02C18650500ACCBE7 /* Assets.xcassets */,
 				78552FF22C18650500ACCBE7 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78552FEF2C18650400ACCBE7 /* ContentView.swift in Sources */,
+				7861D50E2C2589C000E959B8 /* SleepCalculator.mlmodel in Sources */,
 				78552FED2C18650400ACCBE7 /* BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
