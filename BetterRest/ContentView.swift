@@ -51,12 +51,14 @@ struct ContentView: View {
                     }
                 }
                 Section("Daily coffee intake"){
-                    VStack(alignment: .leading, spacing: 10) {
-                        
-                        Stepper("\(coffeeAmount) cup(s)",
-                                value: $coffeeAmount,
-                                in: 0...20
-                        )
+                    Picker("How many cups", selection: $coffeeAmount) {
+                        ForEach(0...20, id:\.self) {
+                            if ($0 <= 1) {
+                                Text("\($0) cup")
+                            } else {
+                                Text("\($0) cups")
+                            }
+                        }
                     }
                 }
             }

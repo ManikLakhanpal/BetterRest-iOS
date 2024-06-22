@@ -13,7 +13,7 @@ Welcome to BetterRest! This innovative iOS application is designed to provide pe
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/BetterRest.git
+   git clone https://github.com/ManikLakhanpal/BetterRest-iOS.git
 2. Open the project in Xcode.
 3. Build and run the app on your iOS device or simulator.
 
@@ -54,6 +54,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 *BetterRest is currently under development.*
+
 
 
 
